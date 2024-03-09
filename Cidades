@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       * {
+            box-sizing:border-box
+        }
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        header{
+            background-color: black;
+            padding: 30px;
+            text-align: center;
+            font-size: 35px;
+            color: white;
+        }
+        section{
+            display: -webkit-flex;
+            display: flex;
+        }
+        nav{
+            -webkit-flex: 1;
+            -ms-flex: 1;
+            flex: 1;
+            background: darkgray;
+            padding: 20px;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 20px;
+            font-size: 20px;
+        }
+        article{
+            -webkit-flex: 3;
+            -ms-flex: 3;
+            flex: 3;
+            background-color: whitesmoke;
+            padding: 10px;
+        }
+        footer{
+            background-color: black;
+            padding: 10px;
+            text-align: center;
+            color: white;
+        }
+
+        @media (max-width: 600px){
+            section {
+                -webkit-flex-direction: colunm;
+                flex-direction: colunm;
+            }
+        }
+        .coluna{
+            float: left;
+            width: 33.33%;
+        }
+
+            .row::after{
+                content: "";
+                clear: both;
+                display: table;
+        }
+
+    </style>
+</head>
+<body>
+
+    <header>
+        Cidades
+    </header>
+
+    <section>
+        <nav>
+            <ul>
+                <button style="background-color: gray;border-radius: 30px;"><a href="#leme">Leme</a></button> <br> <br> <br>
+                <button style="background-color: gray;border-radius: 30px"><a href="#araras">Araras</a></button> <br> <br> <br>
+                <button style="background-color: gray;border-radius: 30px"><a href="#pira">Pirassununga</a></button>
+                </div>
+            </ul>
+        </nav>
+
+    <article>
+        <h1 id="leme"> Leme </h1>
+        <p>Leme é uma cidade com mais de 100mil habitantes</p>
+        <div class="row">
+            <div class="coluna">
+                <img src="leme.jpg" alt="Praça principal de Leme;" style="width:100%;" height="200">
+        </div>
+        <div class="coluna">
+                <img src="leme2.jpg" alt="Lago Municipal de Leme" style="width:100%;" height="200">
+        </div>
+        <div class="coluna">
+                <img src="leme3.jpg" alt="Cidade de Leme;" style="width:100%;" height="200">
+        </div>
+       
+
+        <h2 id="araras">Araras </h2 >
+        <p>Araras é a cidade onde tem a Fatec, onde eu estudo</p>
+        <div class="row">
+            <div class="coluna">
+                <img src="araras1.jpg" alt="Esta é a cidade de Araras;" style="width: 100%;" height="200">
+            </div>
+            <div class="coluna">
+                <img src="araras2jpg.jpg" alt="Esta é a Fatec;" style="width: 100%;" height="200">
+            </div>
+            <div class="coluna">
+                <img src="araras3.jpg" alt="Esse é o lago principal de Araras;" style="width: 100%;" height="200">
+            </div>
+            </div>
+
+        <h2 id="pira">Pirassununga</h2>
+        <p>Pirassununga é a cidade onde tem um dos melhores centro militar da região</p>
+        <div class="row">
+            <div class="coluna">
+                <img src="pira1.jpg" alt="Esta é a Praça de Pirassununga;" style="width: 100%;" height="200">
+            </div>
+            <div class="coluna">
+                <img src="pira2.jpg" alt="Esta é a base militar de Pirassununga;" style="width: 100%;" height="200">
+            </div>
+            <div class="coluna">
+                <img src="pira3.jpg" alt="Esta é a faculdade de Pirassununga;" style="width: 100%;" height="200">
+            </div>
+            </div>
+
+            
+        </div>
+        <p></p>
+    </article>
+   </section>
+
+   <footer>
+    Essas são as minhas cidades favoritas da região
+   </footer>
+    
+</body>
+</html>
